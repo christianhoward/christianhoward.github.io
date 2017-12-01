@@ -1,1 +1,102 @@
-hello World
+<html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <link rel="stylesheet" href="./styles.css">
+            <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+            <script src="https://use.fontawesome.com/fe2ba28c0d.js"></script>
+            <title>Christian Howard</title>
+        </head>
+        <body>
+            <div class="nav">
+                <ul>
+                    <li style="float:left"><a href="/">Christian Howard</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </div>
+            <div id="main">
+                <div class="header-img">
+                    <img src="./howardc.jpg" alt="Christian Howard" class="prof">
+                </div>
+                <div class="name">
+                    Christian Howard
+                    <hr align="center" width="75%">
+                    <p class="subline">Full Stack Engineer</p>
+                </div>
+                <div class="icons">
+                    <span class="header-icons">
+                            <a href="mailto:christian.john.howard@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                            <a href="http://www.twitter.com/christianhoward" target="_blank"><i class="fa fa-twitter"></i></a>
+                            <a href="http://www.linkedin.com/in/christianjhoward" target="_blank"><i class="fa fa-linkedin"></i></a>
+                            <a href="http://www.github.com/christianhoward" target="_blank"><i class="fa fa-github"></i></a>
+                            <a href="https://codepen.io/christianhoward" target="_blank"><i class="fa fa-codepen" aria-hidden="true"></i></a>
+                            <a href="https://medium.com/@christianhoward" target="_blank"><i class="fa fa-medium" aria-hidden="true"></i></a>
+                        </span>
+                </div>
+            </div>
+            <div id="about">
+                <h1>About</h1>
+                <div class="about-grid">
+                    <div class="card">
+                        <p>Hi! I'm Christian and I'm a full stack software engineer. I like working in full stack JavaScript, specifically using React/Redux on the front-end and Node/Express on the back-end. I'm also a co-organizer for the <a href="https://www.meetup.com/CodeNewbie-DC/" target="_blank">DC chapter</a> of <a href="https://www.codenewbie.org/" target="_blank">CodeNewbie</a>!</p>
+                        <p>Recently, I completed my Master of Science in <a href="http://business.gwu.edu/programs/specialized-masters/m-s-information-systems-technology/" target="_blank">Information Systems Technology</a> degree at the <a href="http://business.gwu.edu/" target="_blank">George Washington University School of Business</a>. In my program, I studied database theory, website development, project management, and cloud computing.</p>
+                        <p>Outside of my academic and work lives, I'm a huge TV fanatic. Some of my favorite shows include The Big Bang Theory, Gilmore Girls, VEEP, Survivor, The Goldbergs and Brooklyn Nine-Nine. I'm also a diehard sports fan and will always cheer on the Chicago Bears, Chicago Blackhawks and Washington Nationals.</p>
+                    </div>
+                    <div id="languages" class="card">
+                        <h1>Tech Stack</h1>
+                        <div class="languages-grid">
+                            <i class="devicon-javascript-plain"></i>
+                            <i class="devicon-react-original-wordmark"></i>
+                            <i class="devicon-nodejs-plain-wordmark"></i>
+                            <i class="devicon-express-original-wordmark"></i>
+                            <i class="devicon-mysql-plain-wordmark"></i>
+                            <i class="devicon-mongodb-plain-wordmark"></i>
+                            <i class="devicon-amazonwebservices-plain-wordmark"></i>           
+                            <i class="devicon-heroku-original-wordmark"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="projects">
+                <h1>Projects</h1>
+                <div class="projects-grid">
+                    <div class="card">
+                        <p><a href="http://survivorsready.io" target="_blank">Survivors Ready</a> is a full stack JavaScript application that was designed to provide information on various Survivor contestants without spoiling any season of the show. It also features a "fantasy" season simulator that allows users to pick their favorite contestants and randomize a winner!</p> 
+                        <p>The application is built using jQuery, Node/Express and MySQL and is hosted on an AWS EC2 instance.</p>
+                        <div class="icons">
+                            <span class="project-icons">
+                                    <a href="https://github.com/christianhoward/survivors-ready" target="_blank"><i class="fa fa-github"></i></a>
+                                    <a href="http://survivorsready.io" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i></a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <p><a href="https://bevcellar.herokuapp.com/" target="_blank">Bev Cellar</a> is a full stack JavaScript application that allows users to track beverages that they might have in their drink collection. Users log in through Google to access their own specific cellar. Users have the ability to add, remove and update their bevs in the app.</p>
+                        <p>The application is built using React/Redux, Node/Express, Passport.js and is hosted on Heroku.</p>
+                        <div class="icons">
+                            <span class="project-icons">
+                                    <a href="https://github.com/christianhoward/bev-cellar" target="_blank"><i class="fa fa-github"></i></a>
+                                    <a href="https://bevcellar.herokuapp.com/" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i></a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <p><a href="https://infinite-ravine-79700.herokuapp.com/" target="_blank">Quidditch Hooligans</a> is a CRUD application using MERN stack. The single page application uses CRUD to create, update, delete and display Quidditch players from a MongoDB database. Data flow is handled through Redux. The project is hosted on Heroku if you are interested in testing it out.</p>
+                        <div class="icons">
+                            <span class="project-icons">
+                                    <a href="https://github.com/christianhoward/fullstack-node-react-CRUD-app" target="_blank"><i class="fa fa-github"></i></a>
+                                    <a href="https://infinite-ravine-79700.herokuapp.com/" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i></a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </body>
+        <footer>
+            <div>
+                <p>&copy; 2017 Christian Howard</p>
+            </div>
+        </footer>
+    </html>

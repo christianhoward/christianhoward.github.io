@@ -47,6 +47,10 @@ h1 {
     text-align: center;
 }
 
+p, li a {
+    font-size: 18px;
+}
+
 .nav {
     position: fixed;
     top: 0;
@@ -91,9 +95,12 @@ h1 {
     color: #fff;
 }
 
-#about a {
-    color: #000;
-    text-decoration: none;
+#about a, #projects a {
+    color: #fff;
+}
+
+#about a:hover, #projects a:hover {
+    color: #585858;
 }
 
 #about .card, #projects .card {
@@ -107,11 +114,6 @@ h1 {
 
 #about > h1, #projects h1 {
     color: #3EAAFE;
-}
-
-#projects a {
-    color: #000;
-    text-decoration: none;
 }
 
 .project-icons {

@@ -87,6 +87,7 @@ p, li a {
     box-shadow: 5px 5px 3px lightgray;
     top: -5px;
     left: -5px;
+    transition: 300ms;
 }
 
 #about, #projects, #languages {

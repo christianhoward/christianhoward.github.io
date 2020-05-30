@@ -1,135 +1,96 @@
 <html lang="en">
-        <head>
-            <!-- Global site tag (gtag.js) - Google Analytics -->
-            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-100331741-2"></script>
-            <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-100331741-2"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-            gtag('config', 'UA-100331741-2');
-            </script>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <meta http-equiv="X-UA-Compatible" content="ie=edge">
-            <link rel="stylesheet" href="./styles.css">
-            <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-            <link rel="shortcut icon" type="image/x-icon" href="./media/favicon.ico">
-            <script src="https://use.fontawesome.com/fe2ba28c0d.js"></script>
-            <title>Christian Howard</title>
-        </head>
-        <body>
-            <div class="nav">
-                <ul>
-                    <li style="float:left"><a href="/">Christian Howard</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#about">About</a></li>
-                </ul>
-            </div>
-            <div id="main">
-                <div class="header-img">
-                    <img src="./media/howardc.jpg" 
-                        onmouseover="this.src='media/halpert_ee.gif'" 
-                        onmouseout="this.src='media/howardc.jpg'"
-                        alt="Christian Howard" 
-                        class="prof"
-                    >
-                </div>
-                <div class="name">
-                    Christian Howard
-                    <hr align="center" width="75%">
-                    <p class="subline">Full Stack Engineer</p>
-                </div>
-                <div class="icons">
-                    <span class="header-icons">
-                            <a href="mailto:christian.john.howard@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-                            <a href="http://www.twitter.com/christianhoward" target="_blank"><i class="fa fa-twitter"></i></a>
-                            <a href="http://www.linkedin.com/in/christianjhoward" target="_blank"><i class="fa fa-linkedin"></i></a>
-                            <a href="http://www.github.com/christianhoward" target="_blank"><i class="fa fa-github"></i></a>
-                            <a href="https://codepen.io/christianhoward" target="_blank"><i class="fa fa-codepen" aria-hidden="true"></i></a>
-                            <a href="https://medium.com/@christianhoward" target="_blank"><i class="fa fa-medium" aria-hidden="true"></i></a>
-                        </span>
-                </div>
-            </div>
-            <div id="about">
-                <h1>About</h1>
-                <div class="about-grid">
-                    <div class="card">
-                        <p>Hi! I'm Christian and I'm an Associate Application Developer at <a href="https://www.blueraster.com/" target="_blank">Blue Raster</a>! I like working in full stack JavaScript, specifically using React/Redux on the front-end and Node/Express on the back-end.</p>
-                        <p>Outside of my work life, I'm a huge TV fanatic. Some of my favorite shows include The Big Bang Theory, Gilmore Girls, VEEP, Survivor, The Goldbergs and Brooklyn Nine-Nine. I'm also a diehard sports fan and will always cheer on the Chicago Bears, Chicago Blackhawks, Vegas Golden Knights and Washington Nationals.</p>
-                    </div>
-                    <div id="languages" class="card">
-                        <h1>Tech Stack</h1>
-                        <div class="languages-grid">
-                            <i class="devicon-javascript-plain"></i>
-                            <i class="devicon-react-original-wordmark"></i>
-                            <i class="devicon-nodejs-plain-wordmark"></i>
-                            <i class="devicon-express-original-wordmark"></i>
-                            <i class="devicon-mysql-plain-wordmark"></i>
-                            <i class="devicon-mongodb-plain-wordmark"></i>
-                            <i class="devicon-amazonwebservices-plain-wordmark"></i>           
-                            <i class="devicon-heroku-original-wordmark"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="projects">
-                <h1>Projects</h1>
-                <div class="projects-grid">
-                    <div class="card">
-                        <p><a href="http://survivorsready.io" target="_blank">Survivors Ready</a> is a full stack JavaScript application that was designed to provide information on various Survivor contestants without spoiling any season of the show. It also features a "fantasy" season simulator that allows users to pick their favorite contestants and randomize a winner!</p> 
-                        <p>The application is built using React, Node/Express and MySQL and is hosted on Heroku. Previous iterations can be found on GitHub.</p>
-                        <div class="icons">
-                            <span class="project-icons">
-                                    <a href="https://github.com/christianhoward/survivors-ready" target="_blank"><i class="fa fa-github"></i></a>
-                                    <a href="http://survivorsready.io" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i></a>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <p><a href="https://bevcellar.herokuapp.com/" target="_blank">Bev Cellar</a> is a full stack JavaScript application that allows users to track beverages that they might have in their drink collection. Users log in through Google to access their own specific cellar. Users have the ability to add, remove and update their bevs in the app.</p>
-                        <p>The application is built using React/Redux, Node/Express, Passport.js and is hosted on Heroku.</p>
-                        <div class="icons">
-                            <span class="project-icons">
-                                    <a href="https://github.com/christianhoward/bev-cellar" target="_blank"><i class="fa fa-github"></i></a>
-                                    <a href="https://bevcellar.herokuapp.com/" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i></a>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <p>My <a href="https://overwatch-league-streams.herokuapp.com/" target="_blank">Overwatch League Streams</a> website is a single page application built to display streams for each player in the Overwatch League. Users can filter streams by team and whether the player is online. While this app is catered for the Overwatch League, it can be repurposed for other streaming leagues or organizations.</p>
-                        <p>This SPA uses React and the <a href="https://dev.twitch.tv/docs/api/">new Twitch API</a> and it is hosted on Heroku.</p>
-                        <div class="icons">
-                            <span class="project-icons">
-                                    <a href="https://github.com/christianhoward/overwatch-league-twitch-app" target="_blank"><i class="fa fa-github"></i></a>
-                                    <a href="https://overwatch-league-streams.herokuapp.com/" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i></a>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <p><a href="https://infinite-ravine-79700.herokuapp.com/" target="_blank">Quidditch Hooligans</a> is a single page application that uses CRUD to create, update, delete and display Quidditch players from a MongoDB database. Data flow is handled through Redux. The project is built using the MERN stack and is hosted on Heroku if you are interested in testing it out.</p>
-                        <div class="icons">
-                            <span class="project-icons">
-                                    <a href="https://github.com/christianhoward/fullstack-node-react-CRUD-app" target="_blank"><i class="fa fa-github"></i></a>
-                                    <a href="https://infinite-ravine-79700.herokuapp.com/" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i></a>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <p>In addition to some of my full stack projects, I have some CodePens for my Front-End work:</p>
-                        <ul>
-                            <li><a href="https://codepen.io/christianhoward/full/qpbYgG/" target="_blank">Drag & Drop Example in React</a></li>
-                            <li><a href="https://codepen.io/christianhoward/full/jYLzRq/" target="_blank">React Soundboard</a></li>
-                            <li><a href="https://codepen.io/christianhoward/full/KQvyYo/" target="_blank">Simulator Sample using Recursion</a></li>
-                            <li><a href="https://codepen.io/christianhoward/full/rJXBqG/" target="_blank">React CSS Image Filters</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </body>
-        <footer>
-            <div>
-                <p>&copy; <script type="text/javascript">document.write(new Date().getFullYear());</script> Christian Howard</p>
-            </div>
-        </footer>
-    </html>
+      gtag("config", "UA-100331741-2");
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
+    />
+    <link rel="shortcut icon" type="image/x-icon" href="./media/favicon.ico" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap"
+      rel="stylesheet"
+    />
+    <title>Christian Howard</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="img-container">
+        <img
+          src="./media/howardc.jpg"
+          onmouseover="this.src='media/halpert_ee.gif'"
+          onmouseout="this.src='media/howardc.jpg'"
+          alt="Christian Howard"
+          class="prof"
+        />
+      </div>
+      <div class="about-container">
+        <p>
+          Hey! My name is Christian and I am a geospatial application developer
+          at
+          <a href="https://www.blueraster.com" target="_blank">Blue Raster</a>.
+        </p>
+        <p>
+          My day to day work focuses on mapping applications for public,
+          private, and nonprofit organizations.
+        </p>
+        <p>
+          Outside of work, I am an avid triathlete and spend my time training
+          for endurance sports.
+        </p>
+        <div class="icons">
+          <span class="header-icons">
+            <a href="http://www.github.com/christianhoward" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a href="http://www.twitter.com/christianhoward" target="_blank"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a
+              href="http://www.linkedin.com/in/christianjhoward"
+              target="_blank"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="https://codepen.io/christianhoward" target="_blank"
+              ><i class="fab fa-codepen"></i
+            ></a>
+            <a href="https://www.strava.com/athletes/14084469" target="_blank"
+              ><i class="fab fa-strava"></i
+            ></a>
+            <a href="mailto:christian.john.howard@gmail.com"
+              ><i class="fas fa-envelope"></i
+            ></a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </body>
+  <footer>
+    <div>
+      <p>
+        &copy;
+        <script type="text/javascript">
+          document.write(new Date().getFullYear());
+        </script>
+        Christian Howard
+      </p>
+    </div>
+  </footer>
+</html>

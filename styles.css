@@ -34,7 +34,7 @@ body {
   font-size: 18px;
   max-width: 550px;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .about-container p {
@@ -59,8 +59,55 @@ body {
   color: #3eaafe;
 }
 
-footer {
+footer .footer-copyright {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+}
+
+footer .footer-disclaimer {
   position: absolute;
   bottom: 0;
-  left: 15px;
+  right: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 12px;
+}
+
+.fade-in {
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
+}
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* phone & tablet portrait specific properties */
+@media only screen and (max-width: 899px) {
+  .main-container {
+    margin-top: 15px;
+  }
+
+  .img-container img {
+    height: 200px;
+    width: 200px;
+  }
+
+  .about-container {
+    font-size: 16px;
+    max-width: 300px;
+  }
+
+  footer .footer-copyright {
+    bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
 }

@@ -41,44 +41,75 @@
           class="prof"
         />
       </div>
-      <div class="about-container">
-        <p>
-          Hey! My name is Christian and I am a geospatial application developer
-          at
-          <a href="https://www.blueraster.com" target="_blank">Blue Raster</a>.
-        </p>
-        <p>
-          My day to day work focuses on building mapping applications for
-          public, private, and nonprofit organizations, primarily using
-          TypeScript, React, Redux and the ArcGIS API for JavaScript.
-        </p>
-        <p>
-          Outside of work, I am an avid triathlete and spend my free time
-          training for endurance sports.
-        </p>
-        <div class="icons">
-          <span class="header-icons">
-            <a href="http://www.github.com/christianhoward" target="_blank"
-              ><i class="fab fa-github"></i
-            ></a>
-            <a
-              href="http://www.linkedin.com/in/christianjhoward"
-              target="_blank"
-              ><i class="fab fa-linkedin"></i
-            ></a>
-            <a href="http://www.twitter.com/christianhoward" target="_blank"
-              ><i class="fab fa-twitter"></i
-            ></a>
-            <a href="https://www.strava.com/athletes/14084469" target="_blank"
-              ><i class="fab fa-strava"></i
-            ></a>
-            <a href="https://codepen.io/christianhoward" target="_blank"
-              ><i class="fab fa-codepen"></i
-            ></a>
-            <a href="mailto:christian.john.howard@gmail.com"
-              ><i class="fas fa-envelope"></i
-            ></a>
-          </span>
+      <div id='flip-card' class='flip-card'>
+        <div class='flip-card-inner'>
+          <div class="about-container">
+            <p>
+              Hey! My name is Christian and I am a geospatial application developer
+              at
+              <a href="https://www.blueraster.com" target="_blank">Blue Raster</a>.
+            </p>
+            <p>
+              My day to day work focuses on building mapping applications for
+              public, private, and nonprofit organizations, primarily using
+              TypeScript, React, Redux and the ArcGIS API for JavaScript.
+            </p>
+            <p>
+              Outside of work, I am an avid triathlete and spend my free time
+              training for endurance sports.
+            </p>
+            <button class="styleless-button" onclick="toggleProjects()">
+              <p>
+                Selected Client Work
+              </p>
+            </button>
+            <div class="icons">
+              <span class="header-icons">
+                <a href="http://www.github.com/christianhoward" target="_blank">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="http://www.linkedin.com/in/christianjhoward" target="_blank">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="http://www.twitter.com/christianhoward" target="_blank">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.strava.com/athletes/14084469" target="_blank">
+                  <i class="fab fa-strava"></i>
+                </a>
+                <a href="https://codepen.io/christianhoward" target="_blank">
+                  <i class="fab fa-codepen"></i>
+                </a>
+                <a href="mailto:christian.john.howard@gmail.com">
+                  <i class="fas fa-envelope"></i>
+                </a>
+              </span>
+            </div>
+          </div>
+          <div class="projects-container">
+            <button class="styleless-button back" onclick="toggleProjects()">
+              <p>Back</p>
+            </button>
+            <div class='projects'>
+              <div class='project-item'>
+                <i class="fas fa-globe"></i>
+                <a href='https://www.esri.com/about/newsroom/publications/wherenext/cushman-wakefield-3d-digital-transformation/' target='_blank'>Cushman & Wakefield</a>
+              </div>
+              <div class='project-item'>
+                <i class="fas fa-globe"></i>
+                <a href='https://www.blueraster.com/mekong-infrastructure-tracker/' target='_blank'>Stimson Center's Mekong Infrastructure Tracker</a>
+              </div>
+              <div class='project-item'>
+                <i class="fas fa-globe"></i>
+                <a href='https://www.blueraster.com/bringing-transparency-to-transboundary-water-policy-in-the-mekong-river-basin/' target='_blank'>Stimson Center's Mekong Dam Monitor</a>
+              </div>
+              <div class='project-item'>
+                <i class="fas fa-globe"></i>
+                <a href='https://www.blueraster.com/workforce-development' target='_blank'>American Institutes for Research</a>
+              </div>
+            </div>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -96,4 +127,15 @@
       </div>
     </div>
   </body>
+  <script>
+    function toggleProjects() {
+      var flipCardElement = document.getElementById('flip-card');
+
+      if (flipCardElement.classList.contains('flipped')) {
+        flipCardElement.classList.remove('flipped');
+      } else {
+        flipCardElement.classList.add('flipped');
+      }
+    }
+  </script>
 </html>

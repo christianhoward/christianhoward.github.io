@@ -12,6 +12,14 @@ body {
   background-size: cover;
 }
 
+a {
+  color: #3eaafe;
+}
+
+a:hover {
+  color: #015ca2;
+}
+
 .main-container {
   display: flex;
   flex-direction: column;
@@ -30,21 +38,42 @@ body {
   padding: 3px;
 }
 
-.about-container {
+.flip-card {
+  background-color: transparent;
+  width: 550px;
+  height: 284px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card.flipped .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.about-container,
+.projects-container {
   border-top: 1px solid #000000;
   padding: 10px;
   font-size: 18px;
-  max-width: 550px;
   text-align: center;
   background-color: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
 }
 
 .about-container p {
   margin: 10px 5px;
-}
-
-.about-container p a {
-  color: #3eaafe;
 }
 
 .about-container .icons {
@@ -59,6 +88,35 @@ body {
 
 .about-container .icons svg:hover {
   color: #3eaafe;
+}
+
+.projects-container {
+  position: relative;
+  text-align: left;
+  transform: rotateY(180deg);
+}
+
+.projects-container .back {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.projects-container .projects {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.projects-container .projects .project-item {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.projects-container .projects .project-item svg {
+  margin-right: 8px;
 }
 
 .footer .footer-copyright {
@@ -83,6 +141,27 @@ body {
   animation-duration: 2s;
 }
 
+.styleless-button {
+  /* BELOW RESETS DEFAULT BUTTON STYLING */
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.styleless-button p {
+  margin: 0;
+  color: #3eaafe;
+}
+
+.styleless-button p:hover {
+  color: #015ca2;
+  text-decoration: underline;
+}
+
 @keyframes fadeInOpacity {
   0% {
     opacity: 0;
@@ -105,6 +184,13 @@ body {
   .img-container img {
     height: 200px;
     width: 200px;
+  }
+
+  .flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 380px;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
   }
 
   .about-container {
